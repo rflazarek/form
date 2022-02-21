@@ -7,3 +7,10 @@ html {
   *:after {
     box-sizing: inherit;
   }
+
+
+  body {
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #0f4983 0%, #90ade2 100%);
+  }
+  
