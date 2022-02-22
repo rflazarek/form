@@ -11,9 +11,9 @@
   </head>
 
   <body>
-    <mian>
+    <main>
       <h1>Form fields</h1>
-      <form class="form">
+      <form method="post" action="http://dev.cotenfrontend.pl" class="form">
         <p>
           <label for="firstName">
             Your name:
@@ -107,9 +107,29 @@
         </p>
 
         <p>
+          <label for="radio">
+            Radio:
+            <select name="radio" id="radio">
+              <option value="radio-1">RMF-FM</option>
+              <option value="radio-2">ESKA</option>
+              <option value="radio-3">RMF-MAX</option>
+              <option value="radio-4">ZET</option>
+              <option value="radio-5">RDN</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
           <label for="avatar">
             Password:
             <input class="form__item" type="file" id="avatar" name="avatar" />
+          </label>
+        </p>
+
+        <p>
+          <label for="yourStory">
+            Your Story:
+            <textarea id="yourStory" name="yourStory">Your story...</textarea>
           </label>
         </p>
 
@@ -174,8 +194,14 @@
               <input checked type="checkbox" value="agree" /> I agree
             </label>
           </p>
+                       
         </fieldset>
+      
+        <p>
+          <input name="submit" type="submit" value="Send" /> 
+       </p>
+      
       </form>
-    </mian>
+    </main>
   </body>
 </html>
