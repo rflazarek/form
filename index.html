@@ -13,11 +13,12 @@
   <body>
     <main>
       <h1>Form fields</h1>
-      <form method="post" action="http://dev.cotenfrontend.pl" class="form">
+      <form action="http://dev.cotenfrontend.pl" method="get" class="form">
         <p>
           <label for="firstName">
             Your name:
             <input
+              required
               class="form__item"
               type="text"
               placeholder="Please enter your name"
@@ -30,6 +31,7 @@
           <label
             >Your last name:
             <input
+              required
               class="form__item"
               type="text"
               value="Kowalski/a"
@@ -94,7 +96,7 @@
         </p>
 
         <p>
-          <label for="assword">
+          <label for="password">
             Password:
             <input
               class="form__item"
@@ -147,6 +149,19 @@
               />
             </label>
           </p>
+
+          <p>
+            <label for="postalCode">
+              Postal code:
+              <input
+                class="form__item"
+                pattern="[0-9]{2}-[0-9]{3}"
+                id="postalCode"
+                name="postalCode"
+              />
+            </label>
+          </p>
+
           <p>
             <label
               >City:
@@ -194,13 +209,11 @@
               <input checked type="checkbox" value="agree" /> I agree
             </label>
           </p>
-                       
         </fieldset>
-      
+
         <p>
-          <input name="submit" type="submit" value="Send" /> 
-       </p>
-      
+          <input name="submit" type="submit" value="Send" />
+        </p>
       </form>
     </main>
   </body>
